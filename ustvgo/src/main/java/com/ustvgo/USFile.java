@@ -18,21 +18,21 @@ import java.util.Arrays;
 import java.util.List;
 
 public class USFile {
-    public List<String> readFileLine(){
-        File file=new File("./src/main/resources/ustvgo_channel_info.txt");
-        List<String> list = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                list.add(line);
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return list;
-    }
+//    public List<String> readFileLine(){
+//        File file=new File("./src/main/resources/ustvgo_channel_info.txt");
+//        List<String> list = new ArrayList<>();
+//        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+//            String line;
+//            while ((line = br.readLine()) != null) {
+//                list.add(line);
+//            }
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return list;
+//    }
     public void writeFile(String s) {
         Regions clientRegion = Regions.US_EAST_2;
         String bucketName = "m3uustv";
