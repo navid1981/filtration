@@ -44,12 +44,12 @@ public class USFile {
             AWSCredentials credentials=new AWSCredentials() {
                 @Override
                 public String getAWSAccessKeyId() {
-                    return "AKIAXVNDGGQLSMQAVI7R";
+                    return "AKIAXVNDGGQL6KGVY74V";
                 }
 
                 @Override
                 public String getAWSSecretKey() {
-                    return "2XpSIodxEJLhxGaDlZeukhFJGi7FFbYcN3KOsj2z";
+                    return "Ipq2DNqV/K0V4SeNe+3rGNGFHvTznzlEp6BOWMzm";
                 }
             };
             AmazonS3 s3Client = AmazonS3ClientBuilder.standard()

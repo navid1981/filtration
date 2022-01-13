@@ -1,0 +1,4 @@
+Access Key ID:
+AKIAXVNDGGQL6KGVY74V
+Secret Access Key:
+Ipq2DNqV/K0V4SeNe+3rGNGFHvTznzlEp6BOWMzm
