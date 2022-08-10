@@ -19,12 +19,84 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Pattern;
-
+/**
+ *Filter Service class:
+ *
+ *Each rules in the below structure can look at the below payload(search all 'People' array) to match with it.
+ * •	name: is name of the rule which is used by rulesExpression.
+ * •	path: is payload path which your desired field is located
+ * •	key: The field which we want to check its value for rule/filter
+ * •	value: desired value
+ * •	condition: relation between key and value. Can be: 'eq', 'Contains','lt' (Less Than), 'gt' (greater than), 'empty', 'null', 'exist', 'true', 'false', 'regex', 'in'.
+ * In the below example rules, A and C return True but rule B return False. So, in ruleExpression we have True && (False || True) which is totally return True. Therefore Payload pass filter and can be consumed by application.
+ *
+ * Rules Structure:
+ * {
+ *   "rules": [
+ *     {
+ *       "name": "A",
+ *       "path": "people.[*].Address.[?]",
+ *       "key": "city",
+ *       "value": "Chicago",
+ *       "condition": "eq"
+ *     },
+ *     {
+ *       "name": "B",
+ *       "path": "people.[*].Address.[?]",
+ *       "key": "state",
+ *       "value": "TX",
+ *       "condition": "eq"
+ *     },
+ *     {
+ *       "name": "C",
+ *       "path": "people.[*].Address.[?]",
+ *       "key": "state",
+ *       "value": "VA",
+ *       "condition": "eq"
+ *     }
+ *   ],
+ *   "rulesExpression": "A && ( B || C )"
+ * }
+ *
+ * Payload:
+ * {
+ *   "people": [
+ *     {
+ *       "name": "Ali",
+ *       "address": {
+ *         "street": "1211 W Roosevelt Rd",
+ *         "city": "Chicago",
+ *         "state": "IL",
+ *         "zipcode": "60608",
+ *         "counrty": "US"
+ *       }
+ *     },
+ *     {
+ *       "name": "David",
+ *       "address": {
+ *         "street": "1211 Lee Highway",
+ *         "city": "Fairfax",
+ *         "state": "VA",
+ *         "zipcode": "50608",
+ *         "counrty": "US"
+ *       }
+ *     },
+ *     {
+ *       "name": "Jack",
+ *       "address": {
+ *         "street": "1011 E Main Dr",
+ *         "city": "Newyork",
+ *         "state": "NY",
+ *         "zipcode": "60208",
+ *         "counrty": "US"
+ *       }
+ *     }
+ *   ]
+ * }
+ * @author  Navid Salehvaziri
+ */
 @Service
 public class FilterService {
 
@@ -32,6 +104,13 @@ public class FilterService {
 
     ObjectMapper mapper = new ObjectMapper();
 
+    /**
+     *
+     * @param message xml or json payload.
+     * @param filter filter structure.
+     * @param type xml/json.
+     * @return true if filter match payload. False if it does not.
+     */
     public boolean hasFilter(String message, String filter, Type type) {
         if (type == Type.XML) {
             XmlMapper xmlMapper = new XmlMapper();
