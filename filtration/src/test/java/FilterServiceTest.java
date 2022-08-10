@@ -6,8 +6,8 @@ import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.junit.runner.RunWith;
-import org.navid.model.Type;
-import org.navid.service.FilterService;
+import io.github.navid1981.model.Type;
+import io.github.navid1981.service.FilterService;
 
 
 @RunWith(MockitoJUnitRunner.class)

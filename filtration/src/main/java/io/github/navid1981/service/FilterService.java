@@ -1,17 +1,16 @@
-package org.navid.service;
+package io.github.navid1981.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
-import com.google.gson.Gson;
 import com.jayway.jsonpath.Criteria;
 import com.jayway.jsonpath.Filter;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.PathNotFoundException;
-import org.navid.model.ConsumerFilter;
-import org.navid.model.Rule;
-import org.navid.model.Type;
+import io.github.navid1981.model.ConsumerFilter;
+import io.github.navid1981.model.Rule;
+import io.github.navid1981.model.Type;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

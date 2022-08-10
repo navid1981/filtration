@@ -1,4 +1,4 @@
-package org.navid.model;
+package io.github.navid1981.model;
 
 
 import lombok.Getter;
