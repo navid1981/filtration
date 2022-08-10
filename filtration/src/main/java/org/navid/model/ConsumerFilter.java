@@ -12,14 +12,12 @@ import java.util.Arrays;
 public class ConsumerFilter implements Serializable {
     private String rulesExpression;
     private Rule[] rules;
-    private String[] eventNames;
 
     @Override
     public String toString() {
         return "ConsumerFilter{" +
                 "rulesExpression='" + rulesExpression + '\'' +
                 ", rules=" + Arrays.toString(rules) +
-                ", eventNames=" + Arrays.toString(eventNames) +
                 '}';
     }
 }

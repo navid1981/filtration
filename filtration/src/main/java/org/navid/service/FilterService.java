@@ -29,7 +29,7 @@ import java.util.regex.Pattern;
 @Service
 public class FilterService {
 
-    private static final Logger LOG = LoggerFactory.getLogger(org.navid.Filtration.class);
+    private static final Logger LOG = LoggerFactory.getLogger(FilterService.class);
 
     ObjectMapper mapper = new ObjectMapper();
 
@@ -128,7 +128,7 @@ public class FilterService {
 
         List<Map<String, Object>> list;
         try{
-            list = JsonPath.parse(new Gson().toJson(eventMessage)).read("$."+path,filter);
+            list = JsonPath.parse(eventMessage).read("$."+path,filter);
         }catch (PathNotFoundException e){
             LOG.error("JSON path is wrong");
             return false;

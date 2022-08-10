@@ -1,0 +1,18 @@
+
+AE | AE | https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/1024px-A%26E_Network_logo.svg.png
+BET  | BET | https://cdn.britannica.com/82/103082-050-1B349E2F/logo-BET-Networks.jpg
+Discovery  | Discovery | https://garhwalpost.in/wp-content/uploads/2021/02/discovery-Channel.png
+ESPN  | ESPN | https://a1.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fespn_logos%2Fespn_red.png
+Fox Sports 1 (FS1)  | FS1 | https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/2015_Fox_Sports_1_logo.svg/1200px-2015_Fox_Sports_1_logo.svg.png
+Golf Channel  | GOLF | https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Golf_Channel_Logo.png/1200px-Golf_Channel_Logo.png
+HBO  | HBO | https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/2560px-HBO_logo.svg.png
+History  | History | https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/History_Logo.svg/1200px-History_Logo.svg.png
+Investigation Discovery  | ID | https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/1200px-InvestigationDiscoveryLogo2020.svg.png
+National Geographic  | NatGEO | https://1000logos.net/wp-content/uploads/2021/04/National-Geographic-logo.png
+NBA TV  | NBA | https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/1200px-NBA_TV.svg.png
+NBC  | NBC | https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NBC_logo.svg/1039px-NBC_logo.svg.png
+NBC Sports (NBCSN)  | NBCSN | https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/NBC_Sports_2012.svg/1200px-NBC_Sports_2012.svg.png
+NFL Network  | NFL | https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/NFL_Network_logo.svg/1200px-NFL_Network_logo.svg.png
+Showtime  | Showtime | https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Showtime.svg/1200px-Showtime.svg.png
+TNT  | TNT | https://i.pinimg.com/originals/46/88/e6/4688e66e78ed451e0d55733386ead24d.jpg
+VH1  | VH1 | https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/VH1_logonew.svg/1200px-VH1_logonew.svg.png
