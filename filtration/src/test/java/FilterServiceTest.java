@@ -27,6 +27,7 @@ public class FilterServiceTest {
     }
 
     @Test
+    @org.junit.Test
     public void hasFilter(){
         boolean result=filterService.hasFilter(payload,filter, Type.JSON);
         Assert.assertEquals(true,result);
