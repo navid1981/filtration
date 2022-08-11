@@ -30,7 +30,7 @@ import java.util.regex.Pattern;
  * •	key: The field which we want to check its value for rule/filter
  * •	value: desired value
  * •	condition: relation between key and value. Can be: 'eq', 'Contains','lt' (Less Than), 'gt' (greater than), 'empty', 'null', 'exist', 'true', 'false', 'regex', 'in'.
- * In the below example rules, A and C return True but rule B return False. So, in ruleExpression we have True && (False || True) which is totally return True. Therefore Payload pass filter and can be consumed by application.
+ * In the below example rules, A and C return True but rule B return False. So, in ruleExpression we have True &amp;&amp; (False || True) which is totally return True. Therefore Payload pass filter and can be consumed by application.
  *
  * Rules Structure:
  * {
@@ -57,7 +57,7 @@ import java.util.regex.Pattern;
  *       "condition": "eq"
  *     }
  *   ],
- *   "rulesExpression": "A && ( B || C )"
+ *   "rulesExpression": "A &amp;&amp; ( B || C )"
  * }
  *
  * Payload:
