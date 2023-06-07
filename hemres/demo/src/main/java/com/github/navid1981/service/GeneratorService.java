@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.IOException;
 
 @Service
-public class DemoService {
+public class GeneratorService {
     @Autowired
     private JavaCreatorService javaCreatorService;
 

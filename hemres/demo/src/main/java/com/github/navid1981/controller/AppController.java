@@ -1,6 +1,6 @@
 package com.github.navid1981.controller;
 
-import com.github.navid1981.service.DemoService;
+import com.github.navid1981.service.GeneratorService;
 import com.github.navid1981.service.RequiredAnnotationService;
 import com.github.navid1981.service.SchemaService;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -17,10 +17,10 @@ import java.util.Map;
 import java.util.Set;
 
 @Controller
-public class DemoController {
+public class AppController {
 
     @Autowired
-    private DemoService demoService;
+    private GeneratorService generatorService;
 
     @Autowired
     private SchemaService schemaService;
@@ -30,7 +30,7 @@ public class DemoController {
 
     @PostMapping(value = "/schema",consumes = {"application/json"})
     public ResponseEntity<String> getSchema(@RequestBody String payload){
-        String schema=demoService.convertJsonToSchema(payload);
+        String schema= generatorService.convertJsonToSchema(payload);
         return new ResponseEntity<>(schema, HttpStatus.OK);
     }
 

@@ -9,7 +9,6 @@ import java.net.URLClassLoader;
 import java.security.ProtectionDomain;
 import java.util.List;
 import java.util.Optional;
-import java.util.function.BiConsumer;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javassist.CannotCompileException;
