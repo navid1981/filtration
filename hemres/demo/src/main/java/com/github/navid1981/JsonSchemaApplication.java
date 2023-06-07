@@ -1,7 +1,6 @@
-package com.example.demo;
+package com.github.navid1981;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -12,12 +11,12 @@ import java.net.URL;
 import java.net.URLClassLoader;
 
 @SpringBootApplication
-public class DemoApplication {
+public class JsonSchemaApplication {
     @Value("${java.model.path}")
     private String path;
 
     public static void main(String[] args){
-        SpringApplication.run(DemoApplication.class,args);
+        SpringApplication.run(JsonSchemaApplication.class,args);
     }
 
     @Bean("urlClassLoader")

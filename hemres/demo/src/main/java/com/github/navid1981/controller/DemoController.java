@@ -1,8 +1,8 @@
-package com.example.demo.controller;
+package com.github.navid1981.controller;
 
-import com.example.demo.service.DemoService;
-import com.example.demo.service.RequiredAnnotationService;
-import com.example.demo.service.SchemaService;
+import com.github.navid1981.service.DemoService;
+import com.github.navid1981.service.RequiredAnnotationService;
+import com.github.navid1981.service.SchemaService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;

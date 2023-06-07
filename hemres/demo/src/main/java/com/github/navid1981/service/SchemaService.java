@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.github.navid1981.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.victools.jsonschema.generator.*;
